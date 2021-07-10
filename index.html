@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Light</title>
+    <style>
+    
+        body{
+            
+            background-image: url(photoshop-2845779__340.webp);
+            background-repeat: no-repeat;
+            background-size: cover;
+            padding:20px 150px;
+        }
+       
+        button{
+    background-color: green;
+border:5px solid green;
+color:white;
+font-weight: bold;
+font-family: Georgia, 'Times New Roman', Times, serif;
+border-radius: 10px;
+font-size: 35px;
+padding: 10px;
+cursor: pointer;
+border-spacing: 2in;
+margin-right: 1in;
+
+}
+button:hover{
+    background-color:deeppink;
+}
+        #bulb
+
+        {
+            width:400px;
+            align-items: center;
+            padding-left: 20px;
+            padding-top: 50px;
+            
+
+        }
+        
+        h1
+        {
+            color:white;
+            padding-left:100px;
+        }
+        .container
+        {
+            align-items: center;
+        }
+            
+        @media (max-width:480px)
+        {
+            #bulb
+
+        {
+            width:250px;
+            align-items: center;
+        
+            
+
+        }
+        body{
+            
+            background-image: url(photoshop-2845779__340.webp);
+            background-repeat: repeat;
+            background-size: cover;
+            padding:10px;
+        }
+   
+        button{
+    background-color: green;
+ border:5px solid green;
+ color:white;
+font-weight: bold;
+font-family: Georgia, 'Times New Roman', Times, serif;
+border-radius: 10px;
+font-size: 35px;
+padding: 5px;
+cursor: pointer;
+border-spacing: 7in;
+margin-bottom: 0.5in;
+margin-left: 50px;
+margin-top:20px;
+}
+button:hover{
+    background-color:deeppink;
+}
+        h1{
+            font-size:20px;
+          
+        }
+    }
+    </style>
+</head>
+<body>
+ 
+    
+    <h1>Light On-Off project</h1>
+    <script>
+        function light(value)
+        {
+            var pic;
+            if(value==0)
+            {
+                pic="bulb.jpg";
+
+            }
+            else
+            {
+                pic="bulbon.jpg";
+            }
+            document.getElementById('bulb').src=pic;
+        }
+        </script>
+      
+    <img id="bulb" src="bulb.jpg">
+    <br>
+    <button onclick="light(1)"> Turn ON</button>
+    <button onclick="light(0)">TurnOFF</button>
+
+</body>
+</html>
